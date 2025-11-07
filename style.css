@@ -3,6 +3,7 @@ body {
     margin: 0;
     background-color: #111;
     color: #fff;
+    padding-top: 70px; /* espacio para el header fijo */
 }
 
 /* Header */
@@ -12,9 +13,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    position: sticky;
+    position: fixed; /* ahora siempre fijo */
     top: 0;
-    z-index: 1000; /* Header siempre visible encima de todo */
+    width: 100%; /* necesario para fixed */
+    z-index: 1000; /* siempre encima de todo */
 }
 
 header h1 {
@@ -37,8 +39,7 @@ nav a:hover {
     text-align: center;
     padding: 120px 20px;
     background: url('https://images.unsplash.com/photo-1600181953365-c2f6d3b0b41c') center/cover no-repeat;
-    position: relative; /* Importante para controlar z-index */
-    z-index: 1;
+    position: relative;
 }
 
 .hero h2 {
@@ -104,8 +105,6 @@ nav a:hover {
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
-    position: relative; /* Evita que la imagen se superponga al header */
-    z-index: 0;
 }
 
 /* Contacto */
