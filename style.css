@@ -5,6 +5,7 @@ body {
     color: #fff;
 }
 
+/* Header */
 header {
     background-color: #000;
     display: flex;
@@ -13,7 +14,7 @@ header {
     padding: 15px 40px;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; /* Header siempre visible encima de todo */
 }
 
 header h1 {
@@ -31,10 +32,13 @@ nav a:hover {
     color: #e0b05c;
 }
 
+/* Hero */
 .hero {
     text-align: center;
     padding: 120px 20px;
     background: url('https://images.unsplash.com/photo-1600181953365-c2f6d3b0b41c') center/cover no-repeat;
+    position: relative; /* Importante para controlar z-index */
+    z-index: 1;
 }
 
 .hero h2 {
@@ -63,6 +67,7 @@ nav a:hover {
     color: #000;
 }
 
+/* Servicios */
 #servicios {
     text-align: center;
     padding: 80px 20px;
@@ -82,6 +87,7 @@ nav a:hover {
     width: 250px;
 }
 
+/* Galería */
 #galeria {
     text-align: center;
     padding: 80px 20px;
@@ -98,13 +104,17 @@ nav a:hover {
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
+    position: relative; /* Evita que la imagen se superponga al header */
+    z-index: 0;
 }
 
+/* Contacto */
 #contacto {
     text-align: center;
     padding: 80px 20px;
 }
 
+/* Footer */
 footer {
     background-color: #000;
     text-align: center;
