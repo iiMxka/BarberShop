@@ -3,67 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbería El Estilo</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome para los iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Estudio Barber House</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS interno -->
+    <link rel="stylesheet" href="style.css"> <!-- Aquí enlazas tu CSS separado -->
 </head>
 <body>
+    <!-- -------------------- Header / Navegación -------------------- -->
     <header>
-        <h1>Estudio Barber House</h1>
         <nav>
-            <a href="#servicios">Servicios</a>
-            <a href="#galeria">Galería</a>
-            <a href="#contacto">Contacto</a>
+            <div class="logo">Estudio Barber House</div> <!-- Cambia el nombre de la barbería aquí -->
+            <div class="nav-links">
+                <a href="#hero">Inicio</a>
+                <a href="#services">Servicios</a>
+                <a href="#gallery">Galería</a>
+                <a href="#contact">Contacto</a>
+            </div>
         </nav>
     </header>
 
-    <section id="inicio" class="hero">
-        <h2>El mejor look empieza aquí</h2>
-        <p>Reserva tu cita y disfruta de la mejor barbería de San Pedro de los Milagros.</p>
-        <a href="#contacto" class="boton">Agenda tu cita</a>
+    <!-- -------------------- Hero -------------------- -->
+    <section class="hero" id="hero">
+        <h1>Estudio Barber House</h1> <!-- Cambia el nombre de la barbería aquí -->
+        <p>Luce mejor</p> <!-- Cambia el eslogan aquí -->
     </section>
 
+    <!-- -------------------- Servicios -------------------- -->
     <section id="servicios">
-        <h2>Nuestros Servicios</h2>
-        <div class="servicios-container">
-            <div class="servicio">
-                <i class="fa-solid fa-cut"></i> <!-- Tijeras añadidas -->
-                <h3>Corte Clásico</h3>
-                <p>El estilo tradicional que nunca pasa de moda.</p>
-            </div>
-            <div class="servicio">
-                <h3>Fade Moderno</h3>
-                <p>Los mejores degradados con precisión profesional.</p>
-            </div>
-            <div class="servicio">
-                <h3>Afeitado Premium</h3>
-                <p>Experiencia completa con toalla caliente y productos de calidad.</p>
-            </div>
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios-container">
+        <div class="servicio">
+            <h3>Corte</h3>
+            <p class="precio">$20.000</p>
+            <p>El estilo que más te guste, con acabado profesional.</p>
+        </div>
+        <div class="servicio">
+            <h3>Cejas</h3>
+            <p class="precio">$5.000</p>
+            <p>Definición y limpieza de cejas con técnica precisa.</p>
+        </div>
+        <div class="servicio">
+            <h3>Barba</h3>
+            <p class="precio">$12.000</p>
+            <p>Perfilado, afeitado y arreglo completo de barba.</p>
+        </div>
+        <div class="servicio">
+            <h3>Mascarilla 5 pasos</h3>
+            <p class="precio">$15.000</p>
+            <p>Exfoliación, hidratación y mascarillas para limpiar y rejuvenecer la piel.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- -------------------- Galería -------------------- -->
+    <section id="gallery">
+    <h2 style="text-align:center; margin-bottom:2rem;">Galería</h2>
+    <div class="gallery">
+        <img src="images/super.png" alt="Corte 1">
+        <img src="images/picollo.png" alt="Corte 2">
+        <img src="images/tercero.png" alt="Corte 3">
+        <img src="images/cuarto.png" alt="Corte 4">
+    </div>
+</section>
+
+    <!-- -------------------- Contacto -------------------- -->
+    <section id="contact">
+        <h2 style="text-align:center; margin-bottom:2rem;">Contacto</h2>
+        <div class="contact">
+            <p><i class="fas fa-map-marker-alt"></i> Calle Falsa 123, Ciudad, País</p>
+            <p><i class="fas fa-clock"></i> Lunes - Sábado: 9:00 AM - 7:00 PM</p>
+            <p><i class="fas fa-phone-alt"></i> +57 312 2860382</p>
         </div>
     </section>
 
-    <section id="galeria">
-        <h2>Galería</h2>
-        <div class="galeria-grid">
-            <img src="https://raw.githubusercontent.com/iimxka/BarberShop/main/super.png" alt="Super">
-            <img src="https://raw.githubusercontent.com/iimxka/BarberShop/main/picollo.png" alt="Picollo">
-            <img src="https://images.unsplash.com/photo-1612336307429-43e4d38e404a?auto=format&fit=crop&w=400&q=80" alt="Wat">
-        </div>
-    </section>
+    <!-- -------------------- Botón WhatsApp -------------------- -->
+ 
+<a class="whatsapp-btn" href="https://wa.me/573122860382?text=Hola,%20me%20gustaría%20agendar%20una%20cita." target="_blank">
+    <!-- Usamos la clase correcta de Font Awesome -->
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
 
-    <section id="contacto">
-        <h2>Contáctanos</h2>
-        <p><i class="fa-solid fa-location-dot"></i> 🪮 Calle 10 #15-25, Medellín, Colombia</p>
-        <p><i class="fa-solid fa-clock"></i> Lunes - Sábado: 9:00 AM - 7:00 PM</p>
-        <p><i class="fa-solid fa-phone"></i> +57 312 216 2605</p>
-        <p>📧 contacto@Estudiobarberhouse</p>
-        <a href="https://wa.me/573124567890" class="boton">Agendar por WhatsApp</a>
-    </section>
 
-    <footer>
-        <p>© 2025 Estudio Barber House. Todos los derechos reservados.</p>
-    </footer>
+    <!-- -------------------- JS -------------------- -->
+    <script>
+        // Scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
+
+
