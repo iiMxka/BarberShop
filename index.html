@@ -4,106 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio Barber House</title>
-    
-    <!-- Google Fonts -->
+
+    <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    
-    <!-- CSS interno -->
-    <link rel="stylesheet" href="style.css"> <!-- Aquí enlazas tu CSS separado -->
+
+    <!-- Font Awesome actualizado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- -------------------- Header / Navegación -------------------- -->
     <header>
         <nav>
-            <div class="logo">Estudio Barber House</div> <!-- Cambia el nombre de la barbería aquí -->
+            <div class="logo">Estudio Barber House</div>
             <div class="nav-links">
                 <a href="#hero">Inicio</a>
-                <a href="#services">Servicios</a>
+                <a href="#servicios">Servicios</a>
                 <a href="#gallery">Galería</a>
                 <a href="#contact">Contacto</a>
             </div>
         </nav>
     </header>
 
-    <!-- -------------------- Hero -------------------- -->
     <section class="hero" id="hero">
-        <h1>Estudio Barber House</h1> <!-- Cambia el nombre de la barbería aquí -->
-        <p>Luce mejor</p> <!-- Cambia el eslogan aquí -->
+        <h1>Estudio Barber House</h1>
+        <p>Luce mejor</p>
     </section>
 
-    <!-- -------------------- Servicios -------------------- -->
     <section id="servicios">
-    <h2>Nuestros Servicios</h2>
-    <div class="servicios-container">
-        <div class="servicio">
-            <h3>Corte</h3>
-            <p class="precio">$20.000</p>
-            <p>El estilo que más te guste, con acabado profesional.</p>
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-container">
+            <div class="servicio">
+                <i class="fa-solid fa-cut"></i>
+                <h3>Corte</h3>
+                <p class="precio">$20.000</p>
+                <p>El estilo que más te guste, con acabado profesional.</p>
+            </div>
+            <div class="servicio">
+                <h3>Cejas</h3>
+                <p class="precio">$5.000</p>
+                <p>Definición y limpieza de cejas con técnica precisa.</p>
+            </div>
+            <div class="servicio">
+                <h3>Barba</h3>
+                <p class="precio">$12.000</p>
+                <p>Perfilado, afeitado y arreglo completo de barba.</p>
+            </div>
+            <div class="servicio">
+                <h3>Mascarilla 5 pasos</h3>
+                <p class="precio">$15.000</p>
+                <p>Exfoliación, hidratación y mascarillas para limpiar y rejuvenecer la piel.</p>
+            </div>
         </div>
-        <div class="servicio">
-            <h3>Cejas</h3>
-            <p class="precio">$5.000</p>
-            <p>Definición y limpieza de cejas con técnica precisa.</p>
-        </div>
-        <div class="servicio">
-            <h3>Barba</h3>
-            <p class="precio">$12.000</p>
-            <p>Perfilado, afeitado y arreglo completo de barba.</p>
-        </div>
-        <div class="servicio">
-            <h3>Mascarilla 5 pasos</h3>
-            <p class="precio">$15.000</p>
-            <p>Exfoliación, hidratación y mascarillas para limpiar y rejuvenecer la piel.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-
-    <!-- -------------------- Galería -------------------- -->
     <section id="gallery">
-    <h2 style="text-align:center; margin-bottom:2rem;">Galería</h2>
-    <div class="gallery">
-        <img src="images/super.png" alt="Corte 1">
-        <img src="images/picollo.png" alt="Corte 2">
-        <img src="images/tercero.png" alt="Corte 3">
-        <img src="images/cuarto.png" alt="Corte 4">
-    </div>
-</section>
+        <h2 style="text-align:center; margin-bottom:2rem;">Galería</h2>
+        <div class="gallery">
+            <img src="images/super.png" alt="Corte 1">
+            <img src="images/picollo.png" alt="Corte 2">
+            <img src="images/tercero.png" alt="Corte 3">
+            <img src="images/cuarto.png" alt="Corte 4">
+        </div>
+    </section>
 
-    <!-- -------------------- Contacto -------------------- -->
     <section id="contact">
         <h2 style="text-align:center; margin-bottom:2rem;">Contacto</h2>
         <div class="contact">
-            <p><i class="fas fa-map-marker-alt"></i> Calle Falsa 123, Ciudad, País</p>
-            <p><i class="fas fa-clock"></i> Lunes - Sábado: 9:00 AM - 7:00 PM</p>
-            <p><i class="fas fa-phone-alt"></i> +57 312 2860382</p>
+            <p><i class="fa-solid fa-location-dot"></i> Calle Falsa 123, Ciudad, País</p>
+            <p><i class="fa-solid fa-clock"></i> Lunes - Sábado: 9:00 AM - 7:00 PM</p>
+            <p><i class="fa-solid fa-phone"></i> +57 312 2860382</p>
         </div>
     </section>
 
-    <!-- -------------------- Botón WhatsApp -------------------- -->
- 
-<a class="whatsapp-btn" href="https://wa.me/573122860382?text=Hola,%20me%20gustaría%20agendar%20una%20cita." target="_blank">
-    <!-- Usamos la clase correcta de Font Awesome -->
-    <i class="fa-brands fa-whatsapp"></i>
-</a>
+    <a class="whatsapp-btn" href="https://wa.me/573122860382?text=Hola,%20me%20gustaría%20agendar%20una%20cita." target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-
-    <!-- -------------------- JS -------------------- -->
     <script>
-        // Scroll suave
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                document.querySelector(this.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
             });
         });
     </script>
 </body>
 </html>
-
-
