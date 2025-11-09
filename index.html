@@ -3,108 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbería El Estilo</title>
-
-    <!-- Fuente elegante (Serif para títulos, Sans-serif para texto) -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet">
-
-    <!-- Iconos de Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- Vincular el CSS externo -->
+    <title>Barbería Clásica</title>
+    <!-- Enlace a Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- ==========================
-         NAVEGACIÓN Y HERO
-         (Cambia el nombre de la barbería y el eslogan aquí)
-    =========================== -->
+    <!-- HEADER Y NAVEGACIÓN -->
     <header>
-        <div class="logo">Barbería El Estilo</div> <!-- Cambia el nombre aquí -->
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <!-- CAMBIA EL NOMBRE DE LA BARBERÍA AQUÍ -->
+                <div class="logo">Barbería Clásica</div>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <section id="inicio" class="hero">
-        <h1 class="barber-name">Barbería El Estilo</h1> <!-- Cambia el nombre aquí -->
-        <p>“Cortes clásicos, estilo moderno.”</p> <!-- Cambia el eslogan aquí -->
-    </section>
-
-    <!-- ==========================
-         SERVICIOS
-    =========================== -->
-    <section id="servicios" class="services">
-        <h2>Nuestros Servicios</h2>
-        <div class="service-list">
-            <div class="service-item">
-                <i class="fa-solid fa-scissors"></i>
-                <h3>Corte de Cabello</h3>
-                <p class="service-price">$20.000</p> <!-- Cambia el precio -->
-            </div>
-            <div class="service-item">
-                <i class="fa-solid fa-beard"></i>
-                <h3>Arreglo de Barba</h3>
-                <p class="service-price">$15.000</p>
-            </div>
-            <div class="service-item">
-                <i class="fa-solid fa-bottle-droplet"></i>
-                <h3>Afeitado Clásico</h3>
-                <p class="service-price">$18.000</p>
-            </div>
-            <div class="service-item">
-                <i class="fa-solid fa-spa"></i>
-                <h3>Tratamiento Facial</h3>
-                <p class="service-price">$25.000</p>
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <!-- CAMBIA EL NOMBRE Y ESLOGAN DE LA BARBERÍA AQUÍ -->
+                <h1>Barbería Clásica</h1>
+                <p>Estilo y tradición en cada corte</p>
+                <a href="#servicios" class="btn">Ver Servicios</a>
             </div>
         </div>
     </section>
 
-    <!-- ==========================
-         GALERÍA
-    =========================== -->
-    <section id="galeria" class="gallery">
-        <h2>Galería</h2>
-        <div class="gallery-grid">
-            <!-- Cambia las imágenes a las tuyas -->
-            <img src="https://images.unsplash.com/photo-1621605815971-7171c6bdfa8c?auto=format&fit=crop&w=800&q=80" alt="Corte 1">
-            <img src="https://images.unsplash.com/photo-1528701800489-20beeb1aeeae?auto=format&fit=crop&w=800&q=80" alt="Corte 2">
-            <img src="https://images.unsplash.com/photo-1573496358961-3c09a0e95f7b?auto=format&fit=crop&w=800&q=80" alt="Corte 3">
-            <img src="https://images.unsplash.com/photo-1621605816518-b28b2cf87a30?auto=format&fit=crop&w=800&q=80" alt="Corte 4">
-            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80" alt="Corte 5">
-            <img src="https://images.unsplash.com/photo-1603782920729-3b731b92f0f2?auto=format&fit=crop&w=800&q=80" alt="Corte 6">
+    <!-- SECCIÓN SERVICIOS -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <!-- SERVICIO 1 - CAMBIA PRECIO Y DESCRIPCIÓN SI ES NECESARIO -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Corte de Cabello</h3>
+                    <div class="service-price">$20.000</div>
+                    <p class="service-description">Corte profesional con técnicas modernas y acabado perfecto.</p>
+                </div>
+
+                <!-- SERVICIO 2 - CAMBIA PRECIO Y DESCRIPCIÓN SI ES NECESARIO -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Cejas</h3>
+                    <div class="service-price">$5.000</div>
+                    <p class="service-description">Diseño y arreglo de cejas para realzar tu mirada.</p>
+                </div>
+
+                <!-- SERVICIO 3 - CAMBIA PRECIO Y DESCRIPCIÓN SI ES NECESARIO -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Barba</h3>
+                    <div class="service-price">$12.000</div>
+                    <p class="service-description">Arreglo y diseño de barba con acabados impecables.</p>
+                </div>
+
+                <!-- SERVICIO 4 - CAMBIA PRECIO Y DESCRIPCIÓN SI ES NECESARIO -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Mascarillas 5 Pasos</h3>
+                    <div class="service-price">$15.000</div>
+                    <p class="service-description">Tratamiento facial completo: exfoliación, hidratación, arcilla, puntos negros y nutrición.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- ==========================
-         CONTACTO
-    =========================== -->
-    <section id="contacto" class="contact">
-        <h2>Contáctanos</h2>
-        <div class="contact-info">
-            <p><i class="fa-solid fa-location-dot"></i> Calle 123 #45-67, Medellín, Colombia</p> <!-- Cambia la dirección -->
-            <p><i class="fa-solid fa-clock"></i> Lunes a Sábado: 9:00 AM - 8:00 PM</p> <!-- Cambia el horario -->
-            <p><i class="fa-solid fa-phone"></i> +57 300 123 4567</p> <!-- Cambia el número -->
+    <!-- SECCIÓN GALERÍA -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <h2 class="section-title">Nuestro Trabajo</h2>
+            <div class="gallery-grid">
+                <!-- IMAGEN 1 - CAMBIA LA URL DE LA IMAGEN POR LA TUYA -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Corte de cabello">
+                </div>
+                <!-- IMAGEN 2 - CAMBIA LA URL DE LA IMAGEN POR LA TUYA -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80" alt="Arreglo de barba">
+                </div>
+                <!-- IMAGEN 3 - CAMBIA LA URL DE LA IMAGEN POR LA TUYA -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80" alt="Interior barbería">
+                </div>
+                <!-- IMAGEN 4 - CAMBIA LA URL DE LA IMAGEN POR LA TUYA -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1633144336639-5ec93e5d227d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Productos barbería">
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        © 2025 Barbería El Estilo. Todos los derechos reservados.
-    </footer>
+    <!-- SECCIÓN CONTACTO -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-info">
+                <div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Dirección</h3>
+                            <!-- CAMBIA LA DIRECCIÓN AQUÍ -->
+                            <p>Calle Principal #123, Ciudad</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Teléfono</h3>
+                            <!-- CAMBIA EL TELÉFONO AQUÍ -->
+                            <p>+57 123 456 7890</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Horarios de Atención</h3>
+                            <!-- CAMBIA LOS HORARIOS AQUÍ -->
+                            <p>Lunes a Domingo: 10:30 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <!-- CAMBIA EL EMAIL AQUÍ -->
+                            <p>info@barberiaclasica.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- ==========================
-         BOTÓN FLOTANTE DE WHATSAPP
-         (Cambia el número de teléfono en el enlace)
-    =========================== -->
-    <a href="https://wa.me/573001234567?text=Hola%2C%20me%20gustaría%20agendar%20una%20cita." class="whatsapp-btn" target="_blank">
-        <i class="fab fa-whatsapp"></i>
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <!-- CAMBIA EL NÚMERO DE TELÉFONO EN EL ENLACE (reemplaza 1234567890) -->
+    <a href="https://wa.me/573001234567?text=Hola,%20me%20gustaría%20agendar%20una%20cita." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
     </a>
 
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- CAMBIA EL NOMBRE DE LA BARBERÍA AQUÍ -->
+                <div class="logo">Barbería Clásica</div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p class="copyright">&copy; 2023 Barbería Clásica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
