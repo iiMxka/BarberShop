@@ -3,101 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudio Barber House</title>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome (iconos) -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    
-    <!-- CSS -->
+    <title>Barbería El Estilo</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- -------------------- Header -------------------- -->
     <header>
+        <h1>Estudio Barber House</h1>
         <nav>
-            <div class="logo">Barbería El Estilo</div>
-            <div class="nav-links">
-                <a href="#hero">Inicio</a>
-                <a href="#services">Servicios</a>
-                <a href="#gallery">Galería</a>
-                <a href="#contact">Contacto</a>
-            </div>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
-    <!-- -------------------- Hero -------------------- -->
-    <section class="hero" id="hero">
-        <h1>Estudio Barber House</h1>
-        <p>Luce mejor</p>
+    <section id="inicio" class="hero">
+        <h2>El mejor look empieza aquí</h2>
+        <p>Reserva tu cita y disfruta de la mejor barbería de San Pedro de los Milagros.</p>
+        <a href="#contacto" class="boton">Agenda tu cita</a>
     </section>
 
-    <!-- -------------------- Servicios -------------------- -->
-    <section id="services">
-        <h2 style="text-align:center; margin-bottom:2rem;">Nuestros Servicios</h2>
-        <div class="services">
-            <div class="service-item">
-                <i class="fas fa-cut"></i>
-                <h3>Corte de Cabello</h3>
-                <p class="service-price">$20.000</p>
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-container">
+            <div class="servicio">
+                <i class="fa-solid fa-cut"></i> <!-- Tijeras añadidas -->
+                <h3>Corte Clásico</h3>
+                <p>El estilo tradicional que nunca pasa de moda.</p>
             </div>
-            <div class="service-item">
-                <i class="fas fa-beard"></i>
-                <h3>Arreglo de Barba</h3>
-                <p class="service-price">$15.000</p>
+            <div class="servicio">
+                <h3>Fade Moderno</h3>
+                <p>Los mejores degradados con precisión profesional.</p>
             </div>
-            <div class="service-item">
-                <i class="fas fa-scissors"></i>
-                <h3>Corte + Barba</h3>
-                <p class="service-price">$30.000</p>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-tint"></i>
-                <h3>Coloración</h3>
-                <p class="service-price">$25.000</p>
+            <div class="servicio">
+                <h3>Afeitado Premium</h3>
+                <p>Experiencia completa con toalla caliente y productos de calidad.</p>
             </div>
         </div>
     </section>
 
-    <!-- -------------------- Galería -------------------- -->
-    <section id="gallery">
-        <h2 style="text-align:center; margin-bottom:2rem;">Galería</h2>
-        <div class="gallery">
-            <img src="https://raw.githubusercontent.com/iiMxka/prueba-de-barberia/refs/heads/main/super.png" alt="Corte 1">
-            <img src="https://images.unsplash.com/photo-1590080874398-2f3fa720d8c0?auto=format&fit=crop&w=800&q=80" alt="Corte 2">
-            <img src="https://images.unsplash.com/photo-1590080874361-6b9cb527e3b3?auto=format&fit=crop&w=800&q=80" alt="Corte 3">
-            <img src="https://images.unsplash.com/photo-1590080874268-097f9b62f890?auto=format&fit=crop&w=800&q=80" alt="Corte 4">
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="galeria-grid">
+            <img src="https://raw.githubusercontent.com/iimxka/BarberShop/main/super.png" alt="Super">
+            <img src="https://raw.githubusercontent.com/iimxka/BarberShop/main/picollo.png" alt="Picollo">
+            <img src="https://images.unsplash.com/photo-1612336307429-43e4d38e404a?auto=format&fit=crop&w=400&q=80" alt="Wat">
         </div>
     </section>
 
-    <!-- -------------------- Contacto -------------------- -->
-    <section id="contact">
-        <h2 style="text-align:center; margin-bottom:2rem;">Contacto</h2>
-        <div class="contact">
-            <p><i class="fas fa-map-marker-alt"></i> Calle Falsa 123, Ciudad, País</p>
-            <p><i class="fas fa-clock"></i> Lunes - Sábado: 9:00 AM - 7:00 PM</p>
-            <p><i class="fas fa-phone-alt"></i> +57 xxx xxx xxxx</p>
-        </div>
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p><i class="fa-solid fa-location-dot"></i> 🪮 Calle 10 #15-25, Medellín, Colombia</p>
+        <p><i class="fa-solid fa-clock"></i> Lunes - Sábado: 9:00 AM - 7:00 PM</p>
+        <p><i class="fa-solid fa-phone"></i> +57 312 216 2605</p>
+        <p>📧 contacto@Estudiobarberhouse</p>
+        <a href="https://wa.me/573124567890" class="boton">Agendar por WhatsApp</a>
     </section>
 
-    <!-- -------------------- Botón WhatsApp -------------------- -->
-    <a class="whatsapp-btn" href="https://wa.me/573001234567?text=Hola,%20me%20gustaría%20agendar%20una%20cita." target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- -------------------- JS -------------------- -->
-    <script>
-        // Scroll suave
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <footer>
+        <p>© 2025 Estudio Barber House. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
