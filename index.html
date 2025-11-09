@@ -1,121 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Estudio Barber House</title>
-
-  <!-- Fuentes -->
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome (iconos) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1CmF4... (omit)" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Barber House</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (iconos) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- -------------------- Header -------------------- -->
+    <header>
+        <nav>
+            <div class="logo">Barbería El Estilo</div>
+            <div class="nav-links">
+                <a href="#hero">Inicio</a>
+                <a href="#services">Servicios</a>
+                <a href="#gallery">Galería</a>
+                <a href="#contact">Contacto</a>
+            </div>
+        </nav>
+    </header>
 
-  <!-- Header -->
-  <header>
-    <nav class="nav">
-      <div class="logo">Estudio Barber House</div>
-      <div class="nav-links">
-        <a href="#hero">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#gallery">Galería</a>
-        <a href="#contact">Contacto</a>
-      </div>
-    </nav>
-  </header>
+    <!-- -------------------- Hero -------------------- -->
+    <section class="hero" id="hero">
+        <h1>Estudio Barber House</h1>
+        <p>Luce mejor</p>
+    </section>
 
-  <!-- Hero -->
-  <section id="hero" class="hero">
-    <div class="hero-inner">
-      <h1>Estudio Barber House</h1>
-      <p>El mejor look empieza aquí</p>
-      <a class="btn primary" href="#contact">Agenda tu cita</a>
-    </div>
-  </section>
+    <!-- -------------------- Servicios -------------------- -->
+    <section id="services">
+        <h2 style="text-align:center; margin-bottom:2rem;">Nuestros Servicios</h2>
+        <div class="services">
+            <div class="service-item">
+                <i class="fas fa-cut"></i>
+                <h3>Corte de Cabello</h3>
+                <p class="service-price">$20.000</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-beard"></i>
+                <h3>Arreglo de Barba</h3>
+                <p class="service-price">$15.000</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-scissors"></i>
+                <h3>Corte + Barba</h3>
+                <p class="service-price">$30.000</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-tint"></i>
+                <h3>Coloración</h3>
+                <p class="service-price">$25.000</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Servicios -->
-  <section id="servicios" class="section">
-    <h2>Nuestros Servicios</h2>
-    <div class="servicios-container">
-      <div class="servicio">
-        <i class="fa-solid fa-cut"></i>
-        <h3>Corte</h3>
-        <p class="precio">$20.000</p>
-        <p class="desc">Corte clásico o moderno con acabado profesional.</p>
-      </div>
+    <!-- -------------------- Galería -------------------- -->
+    <section id="gallery">
+        <h2 style="text-align:center; margin-bottom:2rem;">Galería</h2>
+        <div class="gallery">
+            <img src="https://raw.githubusercontent.com/iiMxka/prueba-de-barberia/refs/heads/main/super.png" alt="Corte 1">
+            <img src="https://images.unsplash.com/photo-1590080874398-2f3fa720d8c0?auto=format&fit=crop&w=800&q=80" alt="Corte 2">
+            <img src="https://images.unsplash.com/photo-1590080874361-6b9cb527e3b3?auto=format&fit=crop&w=800&q=80" alt="Corte 3">
+            <img src="https://images.unsplash.com/photo-1590080874268-097f9b62f890?auto=format&fit=crop&w=800&q=80" alt="Corte 4">
+        </div>
+    </section>
 
-      <div class="servicio">
-        <i class="fa-solid fa-eye"></i>
-        <h3>Cejas</h3>
-        <p class="precio">$5.000</p>
-        <p class="desc">Definición y limpieza con técnica precisa.</p>
-      </div>
+    <!-- -------------------- Contacto -------------------- -->
+    <section id="contact">
+        <h2 style="text-align:center; margin-bottom:2rem;">Contacto</h2>
+        <div class="contact">
+            <p><i class="fas fa-map-marker-alt"></i> Calle Falsa 123, Ciudad, País</p>
+            <p><i class="fas fa-clock"></i> Lunes - Sábado: 9:00 AM - 7:00 PM</p>
+            <p><i class="fas fa-phone-alt"></i> +57 xxx xxx xxxx</p>
+        </div>
+    </section>
 
-      <div class="servicio">
-        <i class="fa-solid fa-beard"></i>
-        <h3>Barba</h3>
-        <p class="precio">$12.000</p>
-        <p class="desc">Perfilado, afeitado y arreglo completo.</p>
-      </div>
+    <!-- -------------------- Botón WhatsApp -------------------- -->
+    <a class="whatsapp-btn" href="https://wa.me/573001234567?text=Hola,%20me%20gustaría%20agendar%20una%20cita." target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-      <div class="servicio">
-        <i class="fa-solid fa-face-mask"></i>
-        <h3>Mascarilla 5 pasos</h3>
-        <p class="precio">$15.000</p>
-        <p class="desc">Exfoliación e hidratación profunda.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Galería -->
-  <section id="gallery" class="section">
-    <h2>Galería</h2>
-    <div class="gallery">
-      <!-- Rutas relativas: asegúrate de que estas imágenes estén en la carpeta /images -->
-      <img src="images/super.png" alt="Super" />
-      <img src="images/picollo.png" alt="Picollo" />
-      <img src="images/tercero.png" alt="Ejemplo 3" />
-      <img src="images/cuarto.png" alt="Ejemplo 4" />
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contact" class="section section-contact">
-    <h2>Contacto</h2>
-    <div class="contact-box">
-      <p><i class="fa-solid fa-location-dot"></i> Calle 10 #15-25, Medellín, Colombia</p>
-      <p><i class="fa-solid fa-clock"></i> Lunes - Sábado: 9:00 AM - 7:00 PM</p>
-      <p><i class="fa-solid fa-phone"></i> +57 312 2860382</p>
-      <a class="btn" href="https://wa.me/573122860382?text=Hola,%20me%20gustaría%20agendar%20una%20cita." target="_blank" rel="noopener">Agendar por WhatsApp</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Estudio Barber House. Todos los derechos reservados.</p>
-  </footer>
-
-  <!-- Botón WhatsApp flotante -->
-  <a class="whatsapp-btn" href="https://wa.me/573122860382?text=Hola,%20me%20gustaría%20agendar%20una%20cita." target="_blank" rel="noopener">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
-  <!-- JS: Scroll suave -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', e=>{
-        e.preventDefault();
-        const id = a.getAttribute('href').slice(1);
-        const el = document.getElementById(id);
-        if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
-      });
-    });
-  </script>
+    <!-- -------------------- JS -------------------- -->
+    <script>
+        // Scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-
-
