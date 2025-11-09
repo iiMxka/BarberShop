@@ -4,72 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio Barber House</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- -------------------- Header / Navegación -------------------- -->
     <header>
-        <h1>Estudio Barber House</h1>
         <nav>
-            <a href="#servicios">Servicios</a>
-            <a href="#galeria">Galería</a>
-            <a href="#contacto">Contacto</a>
+            <div class="logo">Estudio Barber House</div>
+            <div class="nav-links">
+                <a href="#hero">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#gallery">Galería</a>
+                <a href="#contact">Contacto</a>
+            </div>
         </nav>
     </header>
 
-    <section id="inicio" class="hero">
-        <h2>El mejor look empieza aquí</h2>
-        <p>Reserva tu cita y disfruta de la mejor barbería de San Pedro de los Milagros.</p>
-        <a href="#contacto" class="boton">Agenda tu cita</a>
+    <!-- -------------------- Hero -------------------- -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Estudio Barber House</h1>
+            <p>Luce mejor</p>
+            <a href="#contact" class="boton">Agendar cita</a>
+        </div>
     </section>
 
+    <!-- -------------------- Servicios -------------------- -->
     <section id="servicios">
-    <h2>Nuestros Servicios</h2>
-    <div class="servicios-container">
-        <div class="servicio">
-            <h3>Corte</h3>
-            <p class="precio">$20.000</p>
-            <p>El estilo que más te guste, con acabado profesional.</p>
-        </div>
-        <div class="servicio">
-            <h3>Cejas</h3>
-            <p class="precio">$5.000</p>
-            <p>Definición y limpieza de cejas con técnica precisa.</p>
-        </div>
-        <div class="servicio">
-            <h3>Barba</h3>
-            <p class="precio">$12.000</p>
-            <p>Perfilado, afeitado y arreglo completo de barba.</p>
-        </div>
-        <div class="servicio">
-            <h3>Mascarilla 5 pasos</h3>
-            <p class="precio">$15.000</p>
-            <p>Exfoliación, hidratación y mascarillas para limpiar y rejuvenecer la piel.</p>
-        </div>
-    </div>
-</section>
-
-
-    <section id="galeria">
-        <h2>Galería</h2>
-        <div class="galeria-grid">
-            <img src="https://raw.githubusercontent.com/iimxka/BarberShop/main/super.png" alt="Super">
-            <img src="https://raw.githubusercontent.com/iimxka/BarberShop/main/picollo.png" alt="Picollo">
-            <img src="https://images.unsplash.com/photo-1612336307429-43e4d38e404a?auto=format&fit=crop&w=400&q=80" alt="Wat">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-container">
+            <div class="servicio fade-in">
+                <i class="fas fa-cut"></i>
+                <h3>Corte</h3>
+                <p class="precio">$20.000</p>
+                <p>El estilo que más te guste, con acabado profesional.</p>
+            </div>
+            <div class="servicio fade-in">
+                <i class="fas fa-eye"></i>
+                <h3>Cejas</h3>
+                <p class="precio">$5.000</p>
+                <p>Definición y limpieza de cejas con técnica precisa.</p>
+            </div>
+            <div class="servicio fade-in">
+                <i class="fas fa-beard"></i>
+                <h3>Barba</h3>
+                <p class="precio">$12.000</p>
+                <p>Perfilado, afeitado y arreglo completo de barba.</p>
+            </div>
+            <div class="servicio fade-in">
+                <i class="fas fa-mask"></i>
+                <h3>Mascarilla 5 pasos</h3>
+                <p class="precio">$15.000</p>
+                <p>Exfoliación e hidratación para limpiar y rejuvenecer la piel.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contacto">
-        <h2>Contáctanos</h2>
-        <p>🪮 Calle 10 #15-25, Medellín, Colombia</p>
-        <p>📞 +57 312 2860382</p>
-        <p>📧 contacto@Estudiobarberhouse</p>
-        <a href="https://wa.me/573122860382" class="boton">Agendar por WhatsApp</a>
+    <!-- -------------------- Galería -------------------- -->
+    <section id="gallery">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="images/super.png" alt="Corte 1" class="fade-in">
+            <img src="images/picollo.png" alt="Corte 2" class="fade-in">
+            <img src="images/tercero.png" alt="Corte 3" class="fade-in">
+            <img src="images/cuarto.png" alt="Corte 4" class="fade-in">
+        </div>
+    </section>
+
+    <!-- -------------------- Contacto -------------------- -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <div class="contact fade-in">
+            <p><i class="fas fa-map-marker-alt"></i> Calle Falsa 123, Ciudad, País</p>
+            <p><i class="fas fa-clock"></i> Lunes - Sábado: 9:00 AM - 7:00 PM</p>
+            <p><i class="fas fa-phone-alt"></i> +57 312 2860382</p>
+            <a href="https://wa.me/573122860382?text=Hola,%20me%20gustaría%20agendar%20una%20cita." target="_blank" class="boton">Agendar por WhatsApp</a>
+        </div>
     </section>
 
     <footer>
         <p>© 2025 Estudio Barber House. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- -------------------- Botón WhatsApp -------------------- -->
+    <a class="whatsapp-btn" href="https://wa.me/573122860382?text=Hola,%20me%20gustaría%20agendar%20una%20cita." target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- -------------------- JS Animación Scroll -------------------- -->
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        faders.forEach(fader => observer.observe(fader));
+    </script>
 </body>
 </html>
-
-
