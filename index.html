@@ -3,92 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudio Barber House</title>
+    <title>Barbería El Estilo</title>
 
-    <!-- Fuentes -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Fuente elegante (Serif para títulos, Sans-serif para texto) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome actualizado -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- Tu CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Vincular el CSS externo -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- ==========================
+         NAVEGACIÓN Y HERO
+         (Cambia el nombre de la barbería y el eslogan aquí)
+    =========================== -->
     <header>
+        <div class="logo">Barbería El Estilo</div> <!-- Cambia el nombre aquí -->
         <nav>
-            <div class="logo">Estudio Barber House</div>
-            <div class="nav-links">
-                <a href="#hero">Inicio</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#gallery">Galería</a>
-                <a href="#contact">Contacto</a>
-            </div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section class="hero" id="hero">
-        <h1>Estudio Barber House</h1>
-        <p>Luce mejor</p>
+    <section id="inicio" class="hero">
+        <h1 class="barber-name">Barbería El Estilo</h1> <!-- Cambia el nombre aquí -->
+        <p>“Cortes clásicos, estilo moderno.”</p> <!-- Cambia el eslogan aquí -->
     </section>
 
-    <section id="servicios">
+    <!-- ==========================
+         SERVICIOS
+    =========================== -->
+    <section id="servicios" class="services">
         <h2>Nuestros Servicios</h2>
-        <div class="servicios-container">
-            <div class="servicio">
-                <i class="fa-solid fa-cut"></i>
-                <h3>Corte</h3>
-                <p class="precio">$20.000</p>
-                <p>El estilo que más te guste, con acabado profesional.</p>
+        <div class="service-list">
+            <div class="service-item">
+                <i class="fa-solid fa-scissors"></i>
+                <h3>Corte de Cabello</h3>
+                <p class="service-price">$20.000</p> <!-- Cambia el precio -->
             </div>
-            <div class="servicio">
-                <h3>Cejas</h3>
-                <p class="precio">$5.000</p>
-                <p>Definición y limpieza de cejas con técnica precisa.</p>
+            <div class="service-item">
+                <i class="fa-solid fa-beard"></i>
+                <h3>Arreglo de Barba</h3>
+                <p class="service-price">$15.000</p>
             </div>
-            <div class="servicio">
-                <h3>Barba</h3>
-                <p class="precio">$12.000</p>
-                <p>Perfilado, afeitado y arreglo completo de barba.</p>
+            <div class="service-item">
+                <i class="fa-solid fa-bottle-droplet"></i>
+                <h3>Afeitado Clásico</h3>
+                <p class="service-price">$18.000</p>
             </div>
-            <div class="servicio">
-                <h3>Mascarilla 5 pasos</h3>
-                <p class="precio">$15.000</p>
-                <p>Exfoliación, hidratación y mascarillas para limpiar y rejuvenecer la piel.</p>
+            <div class="service-item">
+                <i class="fa-solid fa-spa"></i>
+                <h3>Tratamiento Facial</h3>
+                <p class="service-price">$25.000</p>
             </div>
         </div>
     </section>
 
-    <section id="gallery">
-        <h2 style="text-align:center; margin-bottom:2rem;">Galería</h2>
-        <div class="gallery">
-            <img src="images/super.png" alt="Corte 1">
-            <img src="images/picollo.png" alt="Corte 2">
-            <img src="images/tercero.png" alt="Corte 3">
-            <img src="images/cuarto.png" alt="Corte 4">
+    <!-- ==========================
+         GALERÍA
+    =========================== -->
+    <section id="galeria" class="gallery">
+        <h2>Galería</h2>
+        <div class="gallery-grid">
+            <!-- Cambia las imágenes a las tuyas -->
+            <img src="https://images.unsplash.com/photo-1621605815971-7171c6bdfa8c?auto=format&fit=crop&w=800&q=80" alt="Corte 1">
+            <img src="https://images.unsplash.com/photo-1528701800489-20beeb1aeeae?auto=format&fit=crop&w=800&q=80" alt="Corte 2">
+            <img src="https://images.unsplash.com/photo-1573496358961-3c09a0e95f7b?auto=format&fit=crop&w=800&q=80" alt="Corte 3">
+            <img src="https://images.unsplash.com/photo-1621605816518-b28b2cf87a30?auto=format&fit=crop&w=800&q=80" alt="Corte 4">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80" alt="Corte 5">
+            <img src="https://images.unsplash.com/photo-1603782920729-3b731b92f0f2?auto=format&fit=crop&w=800&q=80" alt="Corte 6">
         </div>
     </section>
 
-    <section id="contact">
-        <h2 style="text-align:center; margin-bottom:2rem;">Contacto</h2>
-        <div class="contact">
-            <p><i class="fa-solid fa-location-dot"></i> Calle Falsa 123, Ciudad, País</p>
-            <p><i class="fa-solid fa-clock"></i> Lunes - Sábado: 9:00 AM - 7:00 PM</p>
-            <p><i class="fa-solid fa-phone"></i> +57 312 2860382</p>
+    <!-- ==========================
+         CONTACTO
+    =========================== -->
+    <section id="contacto" class="contact">
+        <h2>Contáctanos</h2>
+        <div class="contact-info">
+            <p><i class="fa-solid fa-location-dot"></i> Calle 123 #45-67, Medellín, Colombia</p> <!-- Cambia la dirección -->
+            <p><i class="fa-solid fa-clock"></i> Lunes a Sábado: 9:00 AM - 8:00 PM</p> <!-- Cambia el horario -->
+            <p><i class="fa-solid fa-phone"></i> +57 300 123 4567</p> <!-- Cambia el número -->
         </div>
     </section>
 
-    <a class="whatsapp-btn" href="https://wa.me/573122860382?text=Hola,%20me%20gustaría%20agendar%20una%20cita." target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
+    <footer>
+        © 2025 Barbería El Estilo. Todos los derechos reservados.
+    </footer>
+
+    <!-- ==========================
+         BOTÓN FLOTANTE DE WHATSAPP
+         (Cambia el número de teléfono en el enlace)
+    =========================== -->
+    <a href="https://wa.me/573001234567?text=Hola%2C%20me%20gustaría%20agendar%20una%20cita." class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
-            });
-        });
-    </script>
 </body>
 </html>
+
